@@ -14,7 +14,7 @@ CREATE TABLE users (
 
 CREATE TABLE pets (
   id SERIAL PRIMARY KEY,
-  owner_id INT REFERENCES users(id),
+  owner_id INT REFERENCES users(id) ON DELETE CASCADE,
   species VARCHAR NOT NULL,
   age INT,
   name VARCHAR NOT NULL

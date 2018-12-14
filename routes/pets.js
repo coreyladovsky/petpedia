@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { getAllPets, getSinglePet, createPet, updatePet, deletePet } = require('../db/queries.js');
+const { getAllPets, getSinglePet, createPet, updatePet, deletePet } = require('../db/queries/petsQueries.js');
 
 router.get('/', getAllPets);
 router.get('/:id', getSinglePet)

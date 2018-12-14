@@ -1,5 +1,4 @@
-const pgp = require('pg-promise')({});
-const db = pgp('postgres://localhost:5432/petpedia');
+const { db } = require('./index.js')
 
 const getAllPets = (req, res, next) => {
   db.any('SELECT * FROM pets')
