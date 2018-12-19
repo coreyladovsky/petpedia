@@ -19,10 +19,3 @@ CREATE TABLE pets (
   age INT,
   name VARCHAR NOT NULL
 );
-
-INSERT INTO users(username, email)
-VALUES ('Corey', 'corey@corey.corey'), ('Reed', 'bigGains@reed.com');
-
-INSERT INTO pets(owner_id, species, age, name)
-VALUES(1, 'feline', 2, 'Noboru'), (1, 'feline', 1, 'Hatchiko'),
- (2, 'tortoise', 95, 'Tortry');
